@@ -131,3 +131,56 @@ img.loaded { filter: blur(0); }
 /* 加入购物车按钮 */
 .add-cart { display: inline-block; margin-top: 10px; background: #5EB69C; color: #fff; padding: 6px 14px; border-radius: 4px; cursor: pointer; }
 .add-cart:disabled { background: #ccc; }
+
+.copyright {
+  text-align: center;
+}
+
+.copyright a {
+  color: #999; 
+  text-decoration: none;
+}
+
+
+.copyright a:hover {
+  color: #666; 
+  text-decoration: underline; 
+}
+
+    .dibu-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 20px 15px;
+      margin: 0 auto;
+      max-width: 1200px; 
+    }   
+    .dibu-item {
+      display: flex;
+      align-items: center;
+      gap: 10px; 
+    }
+    .dibu-img {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      object-fit: cover; 
+      border: 1px solid #e6f7e9; 
+    }
+
+    .dibu-text {
+      font-size: 15px;
+      color: #333;
+      font-family: "Microsoft YaHei", sans-serif;
+    }
+
+    @media (max-width: 500px) {
+      .dibu-container {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      .dibu-item {
+        width: 45%; /* 每行2个 */
+        justify-content: center;
+      }
+    }
